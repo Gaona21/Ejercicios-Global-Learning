@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-carga{
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid #000; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    animation: carga 4s linear infinite;
+}
+
+.pelotita{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: goldenrod;
+    position: absolute;
+}
+
+.pelotita:nth-child(1) {
+    top: 0;
+    left: calc(50% - 12.5px);
+}
+
+.pelotita:nth-child(2) {
+    top: 12.5px;
+    left: calc(75% - 12.5px);
+}
+
+.pelotita:nth-child(3) {
+    top: 37.5px;
+    left: calc(100% - 25px);
+}
+
+.pelotita:nth-child(4) {
+    top: 62.5px;
+    left: calc(75% - 12.5px);
+}
+
+.pelotita:nth-child(5) {
+    top: 75px;
+    left: calc(50% - 12.5px);
+}
+
+.pelotita:nth-child(6) {
+    top: 62.5px;
+    left: calc(75% - 62.5px);
+}
+
+.pelotita:nth-child(7) {
+    top: 37.5px;
+    left: calc(100% - 100px);
+}
+
+.pelotita:nth-child(8) {
+    top: 12.5px;
+    left: calc(75% - 62.5px);
+}
+
+@keyframes carga{
+    100%{
+        transform: rotate(360deg);
+    }
+}

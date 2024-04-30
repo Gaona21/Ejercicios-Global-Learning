@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <main class="main">
+        <form class="formulario">
+
+            <h1 class="titulo_form">Formulario de Registro</h1>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="off" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" autocomplete="off" required>
+
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" autocomplete="off" required>
+
+            <label for="contrasenia">Contraseña:</label>
+            <input type="password" id="contrasenia" name="contrasenia" autocomplete="off" required>
+
+            <label for="confir-contrasenia">Confirmar contraseña:</label>
+            <input type="password" id="confir-contrasenia" name="confir-contrasenia" autocomplete="off" required>
+
+            <label for="cumpleanios">Fecha de nacimiento</label>
+            <input type="date" id="cumpleanios" name="cumpleanios" autocomplete="off" required>
+
+            <div class="cont-newsletter">
+                <label for="newsletter">Suscribirse al boletin informativo</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+            </div>
+
+            <input class="btn btn-registrar" type="submit" value="Registrarse">
+
+        </form>
+
+        <div class="cont-modal">
+            <div class="cont-x">
+                <button class="btn btn-x">X</button>
+            </div>
+
+            <div class="cont-mensaje">
+                <p class="mensaje">Este es un mensaje</p>
+            </div>
+
+            <div class="cont-btn">
+                <button class="btn btn-cancelar">Cancelar</button>
+                <button class="btn btn-aceptar">Aceptar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src.js"></script>
+</body>
+</html>

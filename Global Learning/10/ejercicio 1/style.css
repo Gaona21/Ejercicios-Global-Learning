@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.contenedor-hamburguesa{
+    width: 40px;
+    height: 40px;
+    background-color: orangered;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.palito{
+    width: 70%;
+    height: 5px;
+    margin: 1px 0 1px 0;
+    background-color: #000;
+    /* position: absolute; */
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+
+.contenedor-hamburguesa:active .primero{
+    /* position: absolute; */
+    /* top: 50%; */
+    transform: rotate(45deg) translate(2px, 2.5px);
+    /* transition: all 0.5s; */
+}
+
+.contenedor-hamburguesa:active .segundo{
+    display: none;
+    transition: all 0.5s;
+}
+
+.contenedor-hamburguesa:active .tercero{
+    /* position: absolute; */
+    /* top: 50%; */
+    transform: rotate(-45deg) translate(2px, -2.5px);
+    /* transition: all 0.5s; */
+}
+
+/* .primero{
+    top: 50%;
+    background-color: red;
+    transform: rotate(45deg) rotate(0deg);
+}
+
+.segundo{
+    display: none;
+}
+
+.tercero{
+    top: 50%;
+    background-color: blue;
+    transform: rotate(-45deg) rotate(0deg);
+} */
